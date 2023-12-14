@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btMinus"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toTopOf="@id/btPlus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btThree"
+        app:layout_constraintTop_toBottomOf="@id/btTimes"
+        android:text="@string/u2212"
+        android:backgroundTint="#000000"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btBackSpace"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintTop_toBottomOf="@id/btThree"
+        app:layout_constraintEnd_toStartOf="@id/btEquals"
+        app:layout_constraintStart_toEndOf="@id/btDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/u276e"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btDecimal"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:text="@string/decimal"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/btZero"
+        app:layout_constraintTop_toBottomOf="@id/btTwo"
+        app:layout_constraintEnd_toStartOf="@id/btBackSpace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btZero"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btOne"
+        app:layout_constraintEnd_toStartOf="@id/btDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btEquals"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#000000"
+        android:text="@string/equal"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btPlus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btBackSpace" />
+
+    <Button
+        android:id="@+id/btTwo"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintTop_toBottomOf="@id/btFive"
+        app:layout_constraintEnd_toStartOf="@id/btThree"
+        app:layout_constraintStart_toEndOf="@id/btOne"
+        app:layout_constraintBottom_toTopOf="@id/btDecimal"
+        android:text="@string/_2"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btThree"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toTopOf="@id/btBackSpace"
+        app:layout_constraintTop_toBottomOf="@id/btSix"
+        app:layout_constraintStart_toEndOf="@id/btTwo"
+        app:layout_constraintEnd_toStartOf="@id/btPlus"
+        android:text="@string/_3"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btFour"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:text="@string/_4"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btSeven"
+        app:layout_constraintBottom_toTopOf="@id/btOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btFive"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btFive"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintTop_toBottomOf="@id/btEight"
+        app:layout_constraintBottom_toTopOf="@id/btTwo"
+        app:layout_constraintStart_toEndOf="@id/btFour"
+        app:layout_constraintEnd_toStartOf="@id/btSix"
+        android:text="@string/_5"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btSix"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintTop_toBottomOf="@id/btNine"
+        app:layout_constraintBottom_toTopOf="@id/btThree"
+        app:layout_constraintStart_toEndOf="@id/btFive"
+        app:layout_constraintEnd_toStartOf="@id/btMinus"
+        android:text="@string/_6"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btSeven"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btEight"
+        app:layout_constraintTop_toBottomOf="@id/btPercent"
+        app:layout_constraintBottom_toTopOf="@id/btFour"
+        android:text="@string/_7"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btEight"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintStart_toEndOf="@id/btSeven"
+        app:layout_constraintEnd_toStartOf="@id/btNine"
+        app:layout_constraintBottom_toTopOf="@id/btFive"
+        app:layout_constraintTop_toBottomOf="@id/btExponent"
+        android:text="@string/_8"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btPercent"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#000000"
+        android:text="@string/percent"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btSeven"
+        app:layout_constraintTop_toBottomOf="@id/btShift"
+        app:layout_constraintEnd_toStartOf="@id/btExponent"/>
+
+    <Button
+        android:id="@+id/btPie"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#000000"
+        android:text="@string/u03a0"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/btDivide"
+        app:layout_constraintBottom_toBottomOf="@id/btDivide"
+        app:layout_constraintEnd_toStartOf="@id/btDivide"
+        app:layout_constraintStart_toEndOf="@id/btExponent"
+        />
+
+    <Button
+        android:id="@+id/btShift"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#000000"
+        app:layout_constraintStart_toStartOf="@id/btPercent"
+        app:layout_constraintBottom_toTopOf="@id/btPercent"
+        app:layout_constraintEnd_toEndOf="@id/btPercent"
+        app:layout_constraintTop_toBottomOf="@id/tvCalculation"
+        android:layout_marginTop="150dp"
+        android:text="@string/shift"
+        android:textColor="@color/orange"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btExponent"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#000000"
+        android:text="@string/u0302"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/btPercent"
+        app:layout_constraintBottom_toBottomOf="@id/btPercent"
+        app:layout_constraintStart_toEndOf="@id/btSeven"
+        app:layout_constraintEnd_toStartOf="@id/btNine"/>
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#000000"
+        android:text="@string/ac"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="150dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCalculation"
+        app:layout_constraintBottom_toTopOf="@id/btDivide"
+        app:layout_constraintEnd_toEndOf="@id/btDivide"
+        app:layout_constraintStart_toStartOf="@id/btDivide"
+        />
+
+
+    <Button
+        android:id="@+id/btNine"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintTop_toBottomOf="@id/btPie"
+        app:layout_constraintStart_toEndOf="@id/btEight"
+        app:layout_constraintBottom_toTopOf="@id/btSix"
+        app:layout_constraintEnd_toStartOf="@id/btTimes"
+        android:text="@string/_9"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btOne"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintTop_toBottomOf="@id/btFour"
+        app:layout_constraintBottom_toTopOf="@id/btZero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btTwo"
+        android:text="@string/_1"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btTimes"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:text="@string/u00d7"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btDivide"
+        app:layout_constraintBottom_toTopOf="@id/btMinus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btNine"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btPlus"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/btEquals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btThree"
+        app:layout_constraintTop_toBottomOf="@id/btMinus"
+        android:text="@string/plus"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btDivide"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:text="@string/u00f7"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/btPie"
+        app:layout_constraintBottom_toTopOf="@id/btTimes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btClear"
+        android:backgroundTint="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="392dp"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:ems="10"
+        android:gravity="end"
+        android:textColor="#FFFFFF"
+        android:textDirection="ltr"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCalculation"
+        android:layout_width="392dp"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:ems="10"
+        android:gravity="end"
+        android:textColor="#FFFFFF"
+        android:textDirection="ltr"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvExpression" />
+
+
+    <TextView
+        android:id="@+id/tvMplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@id/btExponent"
+        app:layout_constraintStart_toEndOf="@id/btShift"/>
+
+    <TextView
+        android:id="@+id/tvMMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minusM"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@id/btPie"
+        app:layout_constraintStart_toEndOf="@id/btExponent"/>
+
+    <TextView
+        android:id="@+id/tvMR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mr"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@id/btClear"
+        app:layout_constraintStart_toStartOf="@id/btClear"/>
+
+    <TextView
+        android:id="@+id/tvMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mc"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@id/btDivide"
+        app:layout_constraintStart_toStartOf="@id/btDivide" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CalculatorV2</string>
+    <string name="u2212">−</string>
+    <string name="u276e">❮</string>
+    <string name="decimal">.</string>
+    <string name="calc">%1$s</string>
+    <string name="_0">0</string>
+    <string name="equal">=</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="u221a">√</string>
+    <string name="u03a0">Π</string>
+    <string name="shift">Shift</string>
+    <string name="u0302">̂</string>
+    <string name="ac">AC</string>
+    <string name="_9">9</string>
+    <string name="_1">1</string>
+    <string name="u00d7">×</string>
+    <string name="u0028_u0029">( )</string>
+    <string name="u0025">%</string>
+    <string name="u00f7">÷</string>
+    <string name="m">M+</string>
+    <string name="minusM">M-</string>
+    <string name="mr">MR</string>
+    <string name="mc">MC</string>
+    <string name="calculation">"l"</string>
+    <string name="u0028">(</string>
+    <string name="u0029">)</string>
+    <string name="plus">+</string>
+    <string name="percent">%</string>
+</resources>
